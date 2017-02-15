@@ -1,13 +1,15 @@
 var fullName = "MuhamMAD AL FARIS";
-
-var splitName = fullName.split(" ");
-splitName[0] = splitName[0].slice(0,1).toUpperCase() + splitName[0].slice(1).toLowerCase();
-splitName[1] = splitName[1].slice(0,1).toUpperCase() + splitName[1].slice(1).toLowerCase();
-splitName[2] = splitName[2].slice(0,1).toUpperCase() + splitName[2].slice(1).toLowerCase();
-fullName = splitName.join(" ");
-var formattedName = HTMLheaderName.replace("%data%", fullName);
- 
 var role = "Junior Programmer";
+
+//SplitName
+var splitName = fullName.split(" ");
+for (var i = 0; i < splitName.length; i++) {
+	splitName[i] = splitName[i].slice(0,1).toUpperCase() + splitName[i].slice(1).toLowerCase();
+}
+fullName = splitName.join(" ");
+
+//Replace Data
+var formattedName = HTMLheaderName.replace("%data%", fullName);
 var formattedRole = HTMLheaderRole.replace("%data%", role);
 var array = [formattedName, formattedRole];
 
