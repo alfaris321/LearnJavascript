@@ -1,5 +1,6 @@
-var awesomeThought = "I am Muhammad Al Faris , I Am AWESOME!";
-var funThought = awesomeThought.replace("AWESOME","FUN");
+var formattedName = HTMLheaderName.replace("%data%", "Muhammad Al Faris");
 
-console.log(awesomeThought);
-console.log(funThought);
+var role = "Junior Programmer";
+var formattedRole = HTMLheaderRole.replace("%data%", role);
+
+$("#header").append(formattedName);
