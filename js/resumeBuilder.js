@@ -1,1 +1,1 @@
-$("#main").append("Muhammad Al Faris");
+var awesomeThought = "I am Muhammad Al Faris , I Am AWESOME!"
